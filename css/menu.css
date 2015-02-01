@@ -1,0 +1,83 @@
+/*** Меню ***/
+
+nav{
+    background: #00cccc;
+    background: linear-gradient(to left,rgba(54,194,182,0.96) 0,rgba(62,188,207,0.96) 100%);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    -moz-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    -o-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    text-shadow: none;
+}
+
+.navbar{
+    border: none;
+}
+
+nav a{
+    color: #ffffff;
+    color: rgba(255,255,255,.9);
+    font-size: 31px;
+    line-height: 40px;
+}
+.nav>li>a:hover,
+.nav>li>a:focus,
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
+    background-color: #009999;
+    background-color: #3aa2ad;
+}
+.navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+
+.navbar-nav>.active>a,
+.navbar-nav>.active>a:hover,
+.navbar-nav>.active>a:focus{
+    background-color: #009999;
+    background-color: #3aa2ad;
+}
+
+.dropdown-menu{
+    border: none;
+    background-color: #009999;
+    background-color: #3aa2ad;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus{
+    color: #ffffff;
+    color: rgba(255,255,255,.9);
+    background-color: #339999;
+    background-color: #308791;
+}
+
+.dropdown-menu>li>a{
+    color: #ffffff;
+    color: rgba(255,255,255,.9);
+    font-size: 20px;
+}
+
+/*=========================RESPONSIVE LAYOUTS===========================*/
+
+@media only screen and (max-width: 995px) {
+    nav a{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 350px) {
+
+}

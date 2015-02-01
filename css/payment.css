@@ -1,0 +1,20 @@
+#payment ul{
+    list-style: decimal;
+}
+#payment ul li{
+    margin: 20px 0 20px 100px;
+}
+#payment ul li p{
+    text-indent: 0;
+}
+#payment-forms{
+    width: 100%;
+    padding: 0;
+    padding-top: 65px;
+    text-align:center;
+}
+#payment-forms div{
+    display: inline;
+    width: 40%;
+    text-align: center;
+}

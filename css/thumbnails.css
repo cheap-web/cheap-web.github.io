@@ -1,0 +1,30 @@
+#thumbnails{
+    margin: 20px;
+}
+.thumb-row > div{
+    padding: 0;
+}
+.thumb-row>div>div{
+    margin: 10px;
+    padding: 0;
+    background-color: #333333;
+    background-color: rgba(0,0,0,0.5);
+    border: 1px solid #000000;
+}
+#thumbnails a:hover,
+#thumbnails a:active,
+#thumbnails a:focus{
+    color: #ff3333;
+    color: #ff4141;
+    opacity: 0.7;
+}
+#thumbnails img{
+    width: 100%;
+}
+#thumbnails p{
+    text-indent: 0;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px 1px;
+    margin: 0;
+}

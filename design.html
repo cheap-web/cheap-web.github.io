@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/design.css" rel="stylesheet">
+    <title>Дизайн</title>
+  </head>
+  <body>
+    <iframe id="content" seamless></iframe>
+    <script src="js/jquery.min.js"></script>
+    <script>
+      var param_strs = window.location.search.substr(1).split("&");
+      var params = {};
+      for(var i=0; i<param_strs.length; i++){
+        var param = param_strs[i].split("=");
+        params[param[0]]=param[1];
+      }
+      document.getElementById("content").src = 
+        "../base/designs/"+params["dir"]+"_site/"+params["numb"]+"/index.html";
+    </script>
+  </body>
+</html>
