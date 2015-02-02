@@ -300,13 +300,14 @@
 <div id="feedback">
   <h2>Оставьте заявку и мы сами свяжемся с вами</h2>
 
-  <form>
-    <input type="text" name="name" placeholder="Ваше имя"><br/>
-    <input type="text" name="email" placeholder="Адрес электронной почты"><br/>
-    <input type="text" name="phone" placeholder="Номер телефона"><br/>
-    <textarea type="text" name="message" placeholder="Сообщение"></textarea><br/>
-    <a href="#" class="btn">Отправить</a>
-  </form>
+    <form method="post" action="http://nodesendmail.herokuapp.com/sendmail">
+        <input type="text" value="cheap-web.ru" name="hostname" hidden="hidden">
+        <input type="text" name="name" placeholder="Ваше имя"><br/>
+        <input type="text" name="email" placeholder="Адрес электронной почты"><br/>
+        <input type="text" name="phone" placeholder="Номер телефона"><br/>
+        <textarea type="text" name="message" placeholder="Сообщение"></textarea><br/>
+        <button class="btn" type="submit">Отправить</button>
+    </form>
 </div>
 
 <!-- Футер -->
