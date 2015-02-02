@@ -1,0 +1,176 @@
+body {
+    background-color: #111111;
+    font-family: "Bad Script", "Verdana", serif;
+}
+/*** Неоновая вывеска ***/
+#logo {
+    padding: 1%;
+    font-size: 50px;
+    float: left;
+    text-align: left;
+    text-transform: uppercase;
+    text-shadow: 0 0 20px red, 0 0 30px FireBrick, 0 0 6px DarkRed;
+    color: red;
+    width: 30%;
+    display: inline;
+}
+#logo p { margin:0; }
+#logo #error:hover { text-shadow: 0 0 200px #ffffff, 0 0 80px #008000, 0 0 6px #0000ff; }
+#logo #code:hover { text-shadow: 0 0 100px red, 0 0 40px FireBrick, 0 0 8px DarkRed; }
+#logo #error {
+    color: #fff;
+    text-shadow: 0 0 80px #ffffff, 0 0 30px #008000, 0 0 6px #0000ff;
+}
+#logo #error span {
+    animation: upper 11s linear infinite;
+    -webkit-animation: upper 11s linear infinite;
+    -moz-animation: upper 11s linear infinite;
+    -o-animation: upper 11s linear infinite;
+}
+#logo #code span:nth-of-type(2) {
+    animation: lower 10s linear infinite;
+    -webkit-animation: lower 10s linear infinite;
+    -moz-animation: lower 10s linear infinite;
+    -o-animation: lower 10s linear infinite;
+}
+#logo #code span:nth-of-type(1) {
+    text-shadow: none;
+    opacity: 0.4;
+}
+
+
+nav {
+    font-size: 30px;
+    text-align: center;
+    padding: 3% 1%;
+    width: 65%;
+    float: right;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 60px;
+    margin: 1%;
+}
+ul li {
+    display: inline;
+    margin: auto 1%;
+    padding: 3px 15px;
+}
+a {
+    text-decoration: none;
+}
+ul li a {
+    color: rgb(87, 82, 74);
+}
+ul li a:hover,
+ul li a:focus,
+ul li a:active{
+    color: #fff;
+    text-shadow: 0 0 80px #ffffff, 0 0 30px #008000, 0 0 6px #0000ff;
+    text-decoration: underline;
+}
+
+#main-block{
+    color: #ffffff;
+    margin: 0 30px;
+    float: right;
+    text-align: right;
+}
+/***  ***/
+/*** Шрифты ***/
+/* cyrillic */
+@font-face {
+    font-family: 'Bad Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bad Script Regular'), local('BadScript-Regular'), url(./../fonts/badscriptregular-c.woff2) format('woff2');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+@font-face {
+    font-family: 'Bad Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bad Script Regular'), local('BadScript-Regular'), url(./../fonts/BadScript-Regular.ttf) format('truetype');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin */
+@font-face {
+    font-family: 'Bad Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bad Script Regular'), local('BadScript-Regular'), url(./../fonts/badscriptregular.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+@font-face {
+    font-family: 'Bad Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bad Script Regular'), local('BadScript-Regular'), url(./../fonts/BadScript-Regular.ttf) format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/*** Анимация ***/
+@keyframes upper {
+    0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+        opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+    }
+    20%,21.999%,63%,63.999%,65%,69.999% {
+        opacity:0.4; text-shadow: none;
+    }
+}
+@keyframes lower {
+    0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+        opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+    }
+    19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
+        opacity:0.4; text-shadow: none;
+    }
+}
+@-moz-keyframes upper {
+    0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+        opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+    }
+    20%,21.999%,63%,63.999%,65%,69.999% {
+        opacity:0.4; text-shadow: none;
+    }
+}
+@-moz-keyframes lower {
+    0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+        opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+    }
+    19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
+        opacity:0.4; text-shadow: none;
+    }
+}
+@-webkit-keyframes upper {
+    0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+        opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+    }
+    20%,21.999%,63%,63.999%,65%,69.999% {
+        opacity:0.4; text-shadow: none;
+    }
+}
+@-webkit-keyframes lower {
+    0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+        opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+    }
+    19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
+        opacity:0.4; text-shadow: none;
+    }
+}
+@-o-keyframes upper {
+    0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+        opacity:.99; text-shadow: 0 0 80px #ffffff,0 0 30px #008000,0 0 6px #0000ff;
+    }
+    20%,21.999%,63%,63.999%,65%,69.999% {
+        opacity:0.4; text-shadow: none;
+    }
+}
+@-o-keyframes lower {
+    0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+        opacity:0.99; text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+    }
+    19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
+        opacity:0.4; text-shadow: none;
+    }
+}

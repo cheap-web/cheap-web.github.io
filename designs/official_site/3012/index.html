@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/jquery.socialfeed.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css"/>
+    <title>Заголовок Вашего сайта</title>
+  </head>
+  <body>
+    <div id="logo">
+      <span>Название Вашей компании</span>
+      <br/>
+      <span>+7 (000) 000 00 00</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Меню</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">О&nbsp;нас</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+    <div id="main-block">
+      <h1>Добро пожаловать</h1>
+        <p>Этот дизайн был разработан для Вас и Ваших клиентов, и он приобретет свое лицо, когда здесь появится Ваш текст.</p>
+        <p>Если Вы закажете создание сайта сегодня, то через пару дней Вы получите красивый и удобный, полноценно функционирующий сайт.</p>
+        <p>Хотите больше? Мы предлагаем дополнительные опции, с которыми Вы можете ознакомиться на сайте, для наших клиентов - специальные цены.</p>
+        <p>Вы можете позвонить или написать нам для уточнения любой информации, мы с радостью ответим на любые Ваши вопросы. Для заказа сайта, просто заполните форму обратной связи или напишите нам на почту, и на следующий день Ваш сайт будет готов. Мы работаем без предоплаты, все, что нужно для того, чтобы мы приступили к работе - это номер выбранного Вами шаблона и текст, который Вы хотите на нем видеть.</p>
+        <p>В подарок к сайту Вы получите домен и хостинг на год.</p>
+    </div>
+    <div id="right-block">
+      <div id="contacts">
+        <h2>Контакты</h2>
+         <p style="white-space: nowrap;">
+    Телефон: +7 (000) 000 00 00
+</p>
+<p>
+    Адрес: г. Москва, ул. Ленина, д.1, офис 203
+</p>
+      </div>
+      <div id="news" class="social-feed-container">
+         <h2>Новости</h2>
+         <p>
+    В этом блоке могут быть размещены новости из социальных сетей.
+</p>
+<p>
+    Если Вы не хотите видеть этот блок у себя на сайте, его можно заменить другим или убрать совсем.
+</p>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Codebird.js - required for TWITTER -->
+    <script src="js/codebird.js"></script>
+    <!-- doT.js for rendering templates -->
+    <script src="js/doT.min.js"></script>
+    <!-- Moment.js for showing "time ago" -->
+    <script src="js/moment.min.js"></script>
+    <!-- Social-feed js -->
+    <script src="js/jquery.socialfeed.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.social-feed-container').socialfeed({
+          // FACEBOOK
+//          facebook:{
+//            accounts:['dolomiti'],
+//            limit:2,
+//            access_token:'150849908413827|a20e87978f1ac491a0c4a721c961b68c'
+//          },
+          // GOOGLEPLUS
+//          google:{
+//            accounts: ['#dolomiti'],
+//            limit: 2,
+//            access_token: 'AIzaSyDpNQcIwQf5TcKmI8B0rh3e4OodIywJP14'
+//          },
+          // Twitter
+//          twitter:{
+//            accounts: ['#dolomiti'],
+//            limit: 2,
+//            consumer_key: 'eZe0Sk4GdH7LKWTlotow', // make sure to have your app read-only
+//            consumer_secret: 'j35RWFf6JntvQP9qEWfdzroVCpz4YLnWWIhrdlNw', // make sure to have your app read-only
+//          },
+          // VKONTAKTE
+          vk:{
+            accounts:['@280905642'],
+              // accounts:['#silver'] - выводит новости по запросу silver
+              // accounts:['@140459342'] - выводит новости страницы http://vk.com/id280905642
+            limit: 2,
+            source:'all'
+          },
+          // INSTAGRAM
+//          instagram:{
+//            accounts:['#dolomiti'],
+//            limit:2,
+//            client_id:'2c6d2173ae9d41de905236e6301e5a43'
+//          },
+
+          // GENERAL SETTINGS
+          length:200,
+          show_media:true,
+          // Moderation function - if returns false, template will have class hidden
+          moderation: function(content){
+            return  (content.text) ? content.text.indexOf('fuck') == -1 : true;
+          },
+          //update_period: 5000,
+          // When all the posts are collected and displayed - this function is evoked
+          callback: function(){
+            console.log('all posts are collected');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    min-height: 100%;
+    font-family: verdana, sans-serif;
+    background: url("./../images/bg.jpg") no-repeat 50% 50% fixed;
+    background-size: cover;
+    text-align: justify;
+    text-shadow: 0 0 2px black;
+    font-size: 15px;
+}
+h1, h2 {
+    font-weight: normal;
+}
+#body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+#logo {
+    font-size: 32px;
+    color: white;
+    margin: 3%;
+    text-align: center;
+    width: 96%;
+}
+nav {
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    float: right;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 60px;
+    margin: 1%;
+}
+ul li {
+    display: inline;
+    margin: auto 1%;
+    padding: 3px 15px;
+}
+a {
+    text-decoration: none;
+}
+ul li a {
+    color: #ffffff;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
+#main-block {
+    float: left;
+    width: 65%;
+    margin: 1% 2%;
+}
+#main-text{
+    color: white;
+    float: left;
+}
+.row {
+    float: left;
+    width: 98%;
+    margin: 1% 0;
+    padding: 1%;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+img {
+    width: 100%;
+}
+.service {
+    padding: 1%;
+}
+.img-left {
+    float: left;
+    width: 26%;
+}
+.text-right {
+    float: right;
+    width: 66%;
+    text-align: right;
+}
+.img-right {
+    float: right;
+    width: 26%;
+}
+.text-left {
+    float: left;
+    width: 66%;
+    text-align: left;
+}
+#right-block {
+    float: right;
+    width: 25%;
+    margin: 1% 2%;
+    color: white;
+}

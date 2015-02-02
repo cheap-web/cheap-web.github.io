@@ -1,0 +1,170 @@
+@font-face {
+	font-family: "MarckScript";
+	src: url(../fonts/Marck_Script/MarckScript-Regular.ttf);
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #228B22;
+	font-family: sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 150px;
+	background: #228B22;
+	color: white;
+}
+
+header #logo, #address, #phone {
+	float: left;
+}
+
+header #phone {
+	text-align: right;
+	white-space: nowrap;
+}
+
+header #logo {
+	width: 34%;
+	height: 100px;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+header #logo .info {
+	background: url(../images/house-64.png) left 30px top 10px no-repeat;
+	height: 100%;
+}
+
+header .info {
+	padding: 15px;
+	font-size: 1.2em;
+	font-family: "MarckScript";
+}
+
+header #address {
+	width: 33%;
+	height: 100px;
+	text-align: left;
+}
+
+header #phone {
+	width: 33%;
+	height: 100px;
+}
+
+header nav {
+	position: relative;
+	z-index: 10;
+	clear: both;
+	height: 50px;
+	box-shadow: 0px 0px 10px 3px #006400;
+	text-align: center;
+	width: 100%;
+}
+
+header nav a {
+	display: inline-block;
+	width: 19%;
+	height: 100%;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	font-size: 1.5em;
+	text-shadow: 2px 2px #006400;
+}
+
+header nav a:hover {
+	text-decoration: underline;
+}
+
+#header_panel {
+	background: url(../images/house-409451_1280.jpg) center center no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 650px;
+	position: relative;
+}
+
+#header_panel div {
+	text-align: right;
+	padding: 20px;
+	font-size: 4em;
+	color: white;
+	font-family: "MarckScript";
+}
+
+#about, #services, #feedbacks, #contacts {
+	width: 100%;
+	min-height: 800px;
+	box-sizing: border-box;
+	padding-top: 30px;
+}
+
+#about {
+	background: url(../images/bedroom-349698_1280.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+#services {
+	background: url(../images/bathroom-389255_1280.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+#feedbacks {
+	background: url(../images/marble-countertop-96084_1280.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+#contacts {
+	background: url(../images/balustrade-262981_1280.jpg) center center no-repeat;
+	background-size: cover;
+}
+
+.text {
+	padding: 30px;
+	color: white;
+	background: rgba(0,0,0,0.4);
+	width: 90%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+	/*header #address, #phone {
+		width: 28%;
+	}
+
+	header #logo {
+		width: 40%;
+	}*/
+}
+
+@media screen and (max-width: 500px) {
+	header #address, #phone {
+		display: none;
+	}
+
+	header #logo {
+		width: 100%;
+	}
+
+	header nav a {
+		width: 30%;
+		height: 50px;
+	}
+
+	header nav {
+		height: 100px;
+	}
+
+	header {
+		height: 200px;
+	}
+
+	.text {
+		width: 80%;
+	}
+}

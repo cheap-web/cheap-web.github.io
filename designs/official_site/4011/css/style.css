@@ -1,0 +1,266 @@
+@font-face {
+	font-family: 'BeerMoney';
+	src: url(../fonts/Beer_money/beer_money.woff);
+}
+
+@font-face {
+	font-family: 'Play';
+	src: url(../fonts/Play/Play-Regular.ttf);
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+
+body {
+ 	font-size: 1.1em;
+ 	font-family: 'Play';
+ 	background: #0C020D;
+ 	padding-left: 30px;
+ 	padding-right: 30px;
+ 	padding-bottom: 30px;
+}
+
+header {
+	position: relative;
+	background: url(../images/wave-81840_1280.jpg) center center;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+ 	width: 100%;
+ 	height: 700px;
+ 	box-shadow: 0 10px 10px -10px #35A8E2;
+}
+
+header nav {
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+}
+
+header nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+header nav ul li {
+	display: inline;
+	width: 19%;
+	margin: 2%;
+}
+
+header nav a {
+	text-decoration: none;
+	font-size: 1.5em;
+	height: 50px;
+	line-height: 50px;
+	color: #35A8E2;
+	padding: auto auto;
+	font-family: 'BeerMoney';
+}
+
+header nav a:hover {
+	text-decoration: underline;
+	text-shadow:0 0 15px #35A8E2, 0 0 6px #35A8E2, 0 0 1px #35A8E2;
+}
+
+header #logo, #phone {
+	margin: 0 auto;
+	font-size: 2em;
+	text-align: center;
+	font-family: sans-serif;
+	font-family: 'BeerMoney';
+	text-transform: uppercase;
+}
+
+header #phone {
+	color: #35A8E2;
+}
+
+header #logo {
+	padding-top: 30px;
+	padding-bottom: 10px;
+	text-shadow:0 0 15px #FF31FF, 0 0 6px #FF31FF, 0 0 1px #FF31FF;
+	color: #FF31FF;
+}
+
+header #services {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	margin-top: 80px;
+}
+
+header .service {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	display: inline-block;
+	background: yellow;
+	margin: 2%;
+	box-sizing :border-box;
+	padding-top: 110px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background: rgba(211, 12, 217, 0.6);
+	-webkit-box-shadow:
+        inset 0 0 20px rgba(156,167,254,0.8);
+    -moz-box-shadow:
+        inset 0 0 20px rgba(156,167,254,0.8);
+	box-shadow:
+        inset 0 0 20px rgba(156,167,254,0.8);
+    color: #FEF2FD;
+}
+
+header .service:hover {
+	background: rgba(156,167,254,0.8);
+	-webkit-box-shadow:
+	     0 0 30px rgba(156,167,254,0.8),
+        inset 0 0 20px rgba(211, 12, 217, 0.6);
+    -moz-box-shadow:
+	     0 0 30px rgba(156,167,254,0.8),
+        inset 0 0 20px rgba(211, 12, 217, 0.6);
+	box-shadow:
+	     0 0 30px rgba(156,167,254,0.8),
+        inset 0 0 20px rgba(211, 12, 217, 0.6);
+    cursor: pointer;
+}
+
+header .service .serv_header {
+	font-size: 22px;
+}
+
+hr {
+	width: 90%;
+	background: #FEF2FD;
+	border: 0;
+	height: 1px;
+}
+
+#main-block {
+	box-sizing: border-box;
+	padding: 30px;
+	width: 70%;
+	color: #031529;
+	color: rgba(248, 255, 255,0.8);
+	float: left;
+	margin-top: 30px;
+}
+
+h2 {
+	font-size: 2em;
+	margin-left: 10px; 
+	margin-top: 0;
+	font-family: 'BeerMoney';
+	color: #FF31FF;
+}
+
+
+h3 {
+	font-size: 1.6em;
+	margin-left: 10px;
+	font-family: 'BeerMoney'; 
+	color: #FF31FF;
+}
+
+.right_column {
+	width: 30%;
+	padding-bottom: 20px;
+	float: right;
+	color: rgba(248, 255, 255,0.8);
+	font-size: 1em;
+}
+
+.right_column #contacts {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.right_column #news {
+	width: 90%;
+	margin: 0 auto;
+}
+
+p {
+	margin: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+	header nav {
+		height: 100px;
+	}
+	#main-block {
+		float: bottom;
+		width: 100%;
+	}
+	header #services {
+		margin-top: 100px;
+	}
+	header .service {
+		width: 200px;
+		height: 200px;
+		font-size: 18px;
+		padding-top: 60px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	header nav {
+		height: 100px;
+	}
+	#main-block {
+		float: bottom;
+		width: 100%;
+	}
+	header #services {
+		margin-top: 30px;
+	}
+	header .service {
+		width: 200px;
+		height: 200px;
+		font-size: 18px;
+		padding-top: 60px;
+	}
+}
+
+
+@media screen and (max-width: 700px) {
+	header {
+		padding-bottom: 50px;
+	}
+
+	header nav {
+		width: 100%;
+		font-size: 16px;
+		height: 100px;
+	}
+	#main-block {
+		float: bottom;
+		width: 100%;
+	}
+	.right_column {
+		width: 100% !important;
+		float: top;
+	}
+	header #services {
+		margin-top: 50px;
+	}
+	header .service {
+		width: 150px;
+		height: 150px;
+		font-size: 14px;
+		padding-top: 50px;
+	}
+	header .service .serv_header {
+		font-size: 16px;
+	}
+}

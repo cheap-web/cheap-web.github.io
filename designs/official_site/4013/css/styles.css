@@ -1,0 +1,97 @@
+body{
+  min-height: 100%;
+  font-family: 'Nautilus Pompilius';
+  background: url("./../images/bg.jpg") fixed no-repeat center center;
+  background-size: cover;
+}
+h1{
+  text-align: center;
+  color: #FDE145;
+}
+a{
+    color: #A7E752 !important;
+    text-shadow: 0px 0px 1px black !important;
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+#main-block{
+    font-size: 18px;
+    color: #E0E0E0;
+    min-height: 100%;
+    margin: 2% 5%;
+    text-align: justify;
+    border-radius: 20px;
+    text-shadow: 1px 1px 0 black;
+    padding: 1%;
+}
+#main-block p{
+    text-indent: 40px;
+}
+#logo{
+    float: right;
+    width: 30%;
+    font-size: 30px;
+    color: #E0E0E0;
+    text-shadow: 0 0 2px white;
+    margin: 2% 5%;
+    text-align: right;
+}
+
+nav{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+nav ul{
+    text-shadow: 0 0 2px white;
+    padding: 0;
+    line-height: 60px;
+}
+nav ul li{
+    margin: 2%;
+    display: inline;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+img{
+    width: 100%;
+}
+.row{
+    font-size: 18px;
+    color: #000000;
+    margin: 2%;
+    padding: 2%;
+    background: rgba(255,255,255,0.4);
+    border-radius: 15px;
+}
+.service{
+    padding: 1%;
+}
+.img-left{
+    float: left;
+    width: 30%;
+}
+.text-right{
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+.img-right{
+    float: right;
+    width: 30%;
+}
+.text-left{
+    float: left;
+    width: 70%;
+    text-align: left;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Nautilus Pompilius';
+    font-style: normal;
+    font-weight: 400;
+    src: url(./../fonts/Nautilus.woff) format('opentype');
+}

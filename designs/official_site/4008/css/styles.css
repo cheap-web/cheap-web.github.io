@@ -1,0 +1,94 @@
+body{
+  min-height: 100%;
+  font-family: sans-serif;
+  background: url("./../images/bg.jpg") no-repeat 0 0;
+  background-size: cover;
+}
+h1{
+  text-align: center;
+}
+a{
+    color: #ffffff;
+    text-shadow: 0 0 2px #000000;
+    text-decoration: none;
+}
+a:hover,
+a:focus,
+a:active{
+    color: rgb(255, 196, 45);
+    text-decoration: underline;
+}
+ul{
+    list-style-type: none;
+}
+#main-block{
+    font-size: 18px;
+    color: #ffffff;
+    min-height: 100%;
+    margin: 2% 5%;
+    text-align: justify;
+    border-radius: 20px;
+    text-shadow: 0 0 2px #000000;
+    padding: 1%;
+}
+#main-block p{
+    text-indent: 40px;
+}
+#logo{
+    font-size: 30px;
+    color: rgb(255, 196, 45);
+    text-shadow: 0 0 2px #000000;
+    margin: 2% 5%;
+    text-align: center;
+}
+
+nav{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+}
+nav ul{
+    text-shadow: 0 0 2px white;
+    padding: 0;
+    line-height: 60px;
+}
+nav ul li{
+    margin: 2%;
+    display: inline;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+img{
+    width: 100%;
+}
+.row{
+    font-size: 18px;
+    color: #000000;
+    margin: 2%;
+    padding: 2%;
+    background: rgba(255,255,255,0.7);
+    border-radius: 15px;
+    clear: both;
+}
+.service{
+    padding: 1%;
+}
+.img-left{
+    float: left;
+    width: 30%;
+}
+.text-right{
+    float: right;
+    width: 70%;
+    text-align: right;
+}
+.img-right{
+    float: right;
+    width: 30%;
+}
+.text-left{
+    float: left;
+    width: 70%;
+    text-align: left;
+}

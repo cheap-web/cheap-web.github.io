@@ -1,0 +1,186 @@
+@font-face {
+	font-family: 'BadScript';
+	src: url(../fonts/Bad_Script/BadScript-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'BeerMoney';
+	src: url(../fonts/Beer_money/beer_money.woff);
+}
+
+@font-face {
+	font-family: 'Comfortaa';
+	src: url(../fonts/Comfortaa/Comfortaa-Regular.ttf);
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+
+body {
+	background: url(../images/lipstick-390524.jpg);
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+ 	font-size: 1.2em;
+ 	font-family: sans-serif;
+}
+
+header nav {
+	width: 60%;
+	text-align: center;
+	height: 50px;
+	margin: 0 auto;
+}
+
+header nav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+header nav ul li {
+	display: inline;
+	width: 19%;
+	margin: 2%;
+}
+
+header nav a {
+	text-decoration: none;
+	font-size: 1.5em;
+	height: 50px;
+	line-height: 50px;
+	color: #C8C9C1;
+	padding: auto auto;
+	font-family: 'Comfortaa';
+}
+
+header nav a:hover {
+	text-decoration: underline;
+}
+
+header #logo, #phone {
+	margin: 0 auto;
+	font-size: 2em;
+	text-align: center;
+	color: #C19696;
+	color: #EE7B98;
+	font-family: sans-serif;
+	font-family: 'Comfortaa';
+	text-transform: uppercase;
+}
+
+header #logo {
+	padding-top: 30px;
+	padding-bottom: 10px;
+}
+
+#main-block {
+	box-sizing: border-box;
+	padding: 30px;
+	margin: 0 auto;
+	width: 90%;
+	color: #C8C9C1;
+}
+
+.item {
+	width: 90%;
+	margin: 0 auto;
+	height: 360px;
+	background: rgba(40,22,12,0.6);
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 30px;
+	margin-bottom: 20px;
+	color: #28160c;
+}
+
+.item .img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;	
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+}
+
+.left div {
+	text-align: left;
+}
+
+.right div {
+	text-align: right;
+}
+
+.left .img {
+	float: left;
+	margin-right: 30px;
+}
+
+.right .img {
+	float: right;
+	margin-left: 30px;
+}
+
+.img1 {
+	background: url(../images/blusher-450958_640.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+ }
+
+ .img2 {
+	background: url(../images/cosmetics.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+ }
+
+ .img3 {
+	background: url(../images/eyeshadow-450963_640.jpg) center center no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+ }
+
+p {
+	margin: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+	.item img {
+		height: 300px;
+		width: auto;
+	}
+
+	.item {
+		height: 450px;
+	}
+
+	header nav {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.item .img {
+		height: 100px;
+		width: 100px;
+	}
+
+	.item {
+		height: 320px;
+	}
+
+	header nav {
+		width: 100%;
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,30 @@
+html{
+  height: 100%;
+}
+body{
+  font-family: verdana, sans-serif;
+  background: url("./../images/bg.jpg") no-repeat fixed 50% 80%;
+  background-size: cover;
+}
+#header{
+  font-size: 30px;
+  color: white;
+  margin: 2% 1% 1% 1%;
+  overflow: hidden;
+}
+#logo{
+  float: left;
+}
+#phone{
+  float: right;
+}
+#main-block{
+  background: rgba(0,0,0,0.7);
+  font-size: 15px;
+  color: white;
+  padding: 3%;
+  margin: 2% 1% 2% 1%;
+  height: 100%;
+  text-align: justify;
+  border-radius: 30px;
+}

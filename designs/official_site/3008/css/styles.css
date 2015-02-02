@@ -1,0 +1,87 @@
+/* cyrillic */
+@font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Marck Script'), local('MarckScript-Regular'), url(./../fonts/marckscript-cyrillic.woff2) format('woff2'),
+         local('Marck Script'), local('MarckScript-Regular'), url(./../fonts/MarckScript-Regular.ttf) format('truetype');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Marck Script'), local('MarckScript-Regular'), url(./../fonts/marckscript-latin-ext.woff2) format('woff2'),
+         local('Marck Script'), local('MarckScript-Regular'), url(./../fonts/MarckScript-Regular.ttf) format('truetype');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Marck Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Marck Script'), local('MarckScript-Regular'), url(./../fonts/marckscript-latin.woff2) format('woff2'),
+         local('Marck Script'), local('MarckScript-Regular'), url(./../fonts/MarckScript-Regular.ttf) format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+body{
+    min-height: 500px;
+    font-family: 'Marck Script', verdana, sans-serif;
+    background: url("./../images/bg.jpg") fixed no-repeat 50% 50%;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+}
+#logo{
+    font-size: 35px;
+    color: #000000;
+    width: 98%;
+    text-align: center;
+    font-weight: bold;
+    padding: 1%;
+}
+
+nav{
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    float: right;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    line-height: 60px;
+    margin: 2%;
+}
+ul li{
+    display: inline;
+    margin: auto 2%;
+    padding: 3px 15px;
+}
+a{
+    text-decoration: none;
+}
+ul li a{
+    color: #000000;
+}
+#main-block{
+    float: left;
+    width: 94%;
+    font-weight: bold;
+    font-size: 20px;
+    min-height: 100%;
+    padding: 0 3%;
+    margin: 0;
+    color: #000000;
+}
+#main-block p{
+    text-indent: 25px;
+}
+#pizza{
+    float: left;
+    width: 30%;
+    margin: 15px;
+}

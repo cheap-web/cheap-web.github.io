@@ -1,0 +1,71 @@
+body{
+  min-height: 100%;
+  font-family: 'Nautilus Pompilius';
+  background: url("./../images/bg.jpg") fixed no-repeat 50% 50%;
+  background-size: cover;
+}
+h1{
+  text-align: center;
+}
+p{
+  text-indent: 40px;
+}
+#content{
+  float: right;
+  width: 70%;
+}
+#main-block{
+  background: rgba(255,255,255,0.5);
+  font-size: 18px;
+  color: #2b2b2b;
+  min-height: 100%;
+  padding: 3%;
+  margin: 2% 2% 5% 0%;
+  text-align: justify;
+  border-radius: 20px;
+  text-shadow: 0 0 2px white;
+}
+#logo{
+  font-size: 30px;
+  color: #1e1e1e;
+  text-shadow: 0 0 2px white;
+  margin: 5%;
+  text-align: right;
+}
+
+nav{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    font-size: 30px;
+    text-align: center;
+    width: 20%;
+}
+ul{
+  text-shadow: 0 0 2px white;
+    list-style-type: none;
+    padding: 0;
+    line-height: 60px;
+}
+ul li{
+    margin: 2%;
+    border-radius: 60px;
+}
+a{
+    text-decoration: none;
+}
+ul li a{
+    color: black;
+    text-shadow: 0px 0px 1px white;
+}
+ul li a:hover{
+    text-decoration: underline;
+}
+/* cyrillic */
+@font-face {
+    font-family: 'Nautilus Pompilius';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Nautilus Pompilius'), url(./../fonts/erUc27eS.otf) format('opentype');
+    unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}

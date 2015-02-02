@@ -1,0 +1,254 @@
+@keyframes changeColor {
+	0% {
+        color: #EF0913;
+    }
+    20% {
+    	color: #498D3E;
+    }
+    40% {
+    	color: white;
+    }
+    60% {
+    	color: #6ed5fd;
+    }
+    80% {
+        color: #feff95;
+    }
+    100% {
+        color: #EF0913;
+    }
+}
+
+@-webkit-keyframes changeColor {
+    0% {
+        color: #EF0913;
+    }
+    20% {
+    	color: #498D3E;
+    }
+    40% {
+    	color: white;
+    }
+    60% {
+    	color: #6ed5fd;
+    }
+    80% {
+        color: #feff95;
+    }
+    100% {
+        color: #EF0913;
+    }
+}
+
+@font-face {
+    font-family: 'Christmas ScriptC';
+    src: url(../fonts/christmas_scriptc.woff);
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+html {
+  background: url(../images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.title {
+	margin-top: 50px;
+	margin-right: 50px;
+	float: right;
+	font-family: sans-serif;
+	text-align: right;
+	color: white;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+.logo {
+	/*color: yellow;*/
+	font-family: 'Christmas ScriptC';
+	font-size: 70px;
+	-webkit-animation: changeColor 3s ease;
+	animation: changeColor 3s ease;
+	-moz-animation: changeColor 3s ease;
+	-webkit-animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+}
+
+.phone {
+	color: rgba(255, 255, 255, 0.6);
+	font-size: 30px;
+	font-style: italic;
+}
+
+.service {
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	text-align: center;
+	color: #667280;
+	font-size: 20px;
+	margin-top: 15px;
+}
+
+.service:hover {
+	/*background: rgba(118, 174, 91, 0.8);*/
+	background: rgba(253, 131, 110, 0.8);
+	border-radius: 50%;
+	text-align: center;
+	transition: all 0.3s linear;
+	color: white;
+	cursor: default;
+}
+
+#service_1 {
+	margin-left: 5%;
+}
+
+#service_2 {
+	margin-left: 250px;
+	margin-top: -150px;
+}
+
+#service_3 {
+	margin-left: 5%;
+	margin-top: -150px;
+}
+
+.divider {
+	height: 2px;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: -10px;
+	margin-bottom: 30px;
+}
+
+.service .header_text {
+	font-size: 30px;
+}
+
+.service .content {
+	vertical-align: middle;
+	display: inline-block;
+	margin-top: 30%;
+	width: 80%;
+}
+
+.main_content {
+	width: 80%;
+	padding: 5%;
+	color: #667280;
+	text-align: justify;
+	background: rgba(255, 255, 255, 0.8);
+	margin: 5%;
+	border-radius: 10px;
+	position: relative;
+	height: auto;
+}
+
+.main {
+	width: 60%;
+}
+
+.right-top {
+	width: 30%;
+	position: absolute;
+	right: 5%;
+	top: 12%;
+	font-size: 14px;
+}
+
+.right-bottom {
+	position: absolute;
+	width: 30%;
+	right: 5%;
+	top: 45%;
+	font-size: 14px;
+}
+
+.circle {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+}
+
+.green{
+	background: rgba(118, 174, 91, 0.6);
+}
+
+.red {
+	background: rgba(254, 135, 113, 0.6);
+}
+
+#red1 {
+	margin-top: -600px;
+}
+
+#green1 {
+	margin-top: -200px;
+}
+
+h2 {
+	font-family: 'Christmas ScriptC';
+	font-size: 50px;
+	text-align: center;
+}
+
+h3 {
+	font-family: 'Christmas ScriptC';
+	font-size: 35px;
+	text-align: center;
+}
+
+.wrap {
+	width: 100%;
+	min-height: 100%;
+}
+
+footer {
+	width: 100%;
+	height: 100px;
+	position: relative;
+}
+
+.info {
+	position: relative;
+	float: right;
+	font-style: italic;
+	font-family: sans-serif;
+	font-size: 30px;
+	text-align: center;
+	color: #667280;
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+nav {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+}
+
+nav a {
+	width: 19%;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+	font-size: 28px;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.6);
+	font-family: 'Christmas ScriptC';
+}
+
+nav a:hover, .active_tab {
+	color: rgba(255, 255, 255, 0.9);
+}

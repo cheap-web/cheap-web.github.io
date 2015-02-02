@@ -1,0 +1,54 @@
+@keyframes anim{
+  from {opacity: 0;}
+  to {opacity: 0.7;}
+}
+@-moz-keyframes anim{
+  from {opacity: 0;}
+  to {opacity: 0.7;}
+}
+@-webkit-keyframes anim{
+  from {opacity: 0;}
+  to {opacity: 0.7;}
+}
+@-o-keyframes anim{
+  from {opacity: 0;}
+  to {opacity: 0.7;}
+}
+.appear-anim{
+  animation: anim 3s;
+  -webkit-animation: anim 3s;
+  -moz-animation: anim 3s;
+  -o-animation: anim 3s;
+}
+body{
+  min-height: 100%; 
+  font-family: verdana, sans-serif;
+  background: url("./../images/bg.jpg") fixed no-repeat 50% 50%;
+  background-size: cover;
+}
+#main-block{
+  background: #111;
+  float: right;
+  width: 40%;
+  font-size: 15px;
+  opacity: 0.7;
+  color: #fff;
+  min-height: 100%;
+  padding: 0 3%;
+  margin: 2% 2% 5% 0%;
+  border-radius: 9px;
+}
+#logo{
+  position: fixed;
+  float: left;
+  font-size: 30px;
+  color: #1e1e1e;
+  opacity: 0.7;
+  margin: 1% 5%;
+  width: 30%;
+  text-shadow: 0px 0px 5px rgb(187, 153, 130);
+}
+.company-name{
+  font-weight: bold;
+  color: #111;
+}
