@@ -265,6 +265,12 @@ textarea{
     padding: 20px 0 30px;
     font-size: 32px;
 }
+#feedback input,
+#feedback textarea{
+    color: #000000;
+    font-weight: bold;
+    text-shadow: #ffffff;
+}
 
 /*** Как заказать ***/
 #order{
