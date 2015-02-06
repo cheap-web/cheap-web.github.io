@@ -5,8 +5,7 @@ html{
 body{
     background-color: #333333;
     background-color: #3d392e;
-    background: url("../images/bg.jpg") fixed 50% 50%;
-    background-size: cover;
+    background: url("../images/bg.jpg");
     text-shadow: 0 0 10px #000000;
     max-width: 100%;
     font-family: "Poiret One", 'Verdana', sans-serif;
