@@ -23,8 +23,10 @@
       }
       document.getElementById("content").src = 
         "./designs/"+params["dir"]+"_site/"+params["numb"]+"/index.html";
-      $.when($('iframe#content').contents().find('head').append('<script src="js/jquery.min.js"></script>')).done(
-      $('iframe#content').contents().find('body').append('<script>$(document).ready(function(){if("cheap-web.ru" !== window.location.hostname){window.location.href = "http://cheap-web.ru/";}})</script>'));
+      var script = document.createElement('script');
+      script.onload = function(){if("cheap-web.ru" !== window.location.hostname){window.location.href = "http://cheap-web.ru/";}};
+      script.src = "js/jquery.min.js";
+      $('iframe#content').contents().find('head')[0].appendChild(script);
     </script>
   </body>
 </html>
