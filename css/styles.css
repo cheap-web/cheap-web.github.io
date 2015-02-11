@@ -114,7 +114,6 @@ h3{
 }
 .item img{
     width: 128px;
-    margin-bottom: -50px;
 }
 .item-right{
     margin-right: 3%;
@@ -138,7 +137,8 @@ h3{
 .template{
     border: 5px solid #339999;
     border: 5px solid #269692;
-    padding: 2%;
+    padding: 15px;
+    margin-top: 20px;
 
     /* Для растягивания контента по вертикали */
     display: -webkit-box;
@@ -174,8 +174,10 @@ h3{
     width: 100%;
 }
 .btn-choose{
-    margin-top: 20px;
+    margin-top: 20px !important;
     font-size: 26px;
+    height: 40px !important;
+    line-height: 30px !important;
 }
 /*** Доп. опции ***/
 .option{
@@ -252,7 +254,6 @@ textarea{
     padding: 0 50px;
 }
 #contacts > div > img{
-    float: left;
 }
 #contacts > div p{
     margin-top: 35px;
@@ -286,16 +287,10 @@ textarea{
 }
 
 /*** Шаблоны заказа ***/
-#order-templates > div{
-    width: 44%;
-    margin: 0 3%;
-}
 .order-template img {
-    width: 120px;
-    float: left;
-}
-.order-template > div:nth-of-type(2){
-    width: 80%;
+    width: 100%;
+    max-width: 120px;
+    min-width: 90px;
 }
 .order-template{
     /* Для выравнивания контента по вертикали */
@@ -355,7 +350,8 @@ a:focus > .attention{
     font-size: 26px;
     text-align: center;
 }
-.phone{
+.phone,
+.email{
     white-space: nowrap;
 }
 .home{
@@ -406,4 +402,27 @@ hr{
     font-weight: 400;
     src: local('Poiret One'), local('PoiretOne-Regular'), url(../fonts/PoiretOne-Regular.ttf) format('truetype');
 }
-/*-------------------------------------------------*/
+/*=========================RESPONSIVE LAYOUTS===========================*/
+
+@media only screen and (max-width: 995px) {
+    input, textarea {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    input, textarea {
+        width: 80%;
+    }
+    .description {
+        margin: 20px 10px;
+    }
+    .item-descr {
+        margin-left: 10%;
+    }
+    #order ul li {
+        margin: 20px 0 20px 30px;
+    }
+    .phone, .email {
+        font-size: 27px;
+    }
+}

@@ -4,17 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Оставь заявку сегодня, и уже завтра твой сайт появится в интернете! Сайты от 2000 рублей, у нас самые низкие цены и высокое качество!">
+    <meta name="keywords" content="создание сайтов профессионально, создание сайтов по низким ценам, дизайн сайта, заказать сайт, заказать сайт онлайн, создание сайтов без предоплаты, разработка сайтов, дизайн, шаблон сайта, уникальный дизайн сайта, дешевый сайт, супер цена на сайт, выгодное предложение, создать сайт быстро, качественные сайты, сайт бесплатно, карту на сайт, форма обратной связи, кнопка заказать звонок, заказать сайт не выходя из дома, сайт для бизнеса">
+    <meta name="revisit-after" content="1 days">
     <meta name="author" content="">
     <link rel="icon" href="images/favicon.ico">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/design.css" rel="stylesheet">
-    <title>Дизайн</title>
+    <title>Дизайн сайта</title>
   </head>
   <body>
+    <div class="nojs"><p><strong>Включите JavaScript</strong></p></div>
     <iframe id="content" seamless></iframe>
     <script src="js/jquery.min.js"></script>
     <script>
+      $('.nojs').remove();
       var param_strs = window.location.search.substr(1).split("&");
       var params = {};
       for(var i=0; i<param_strs.length; i++){
@@ -28,5 +32,32 @@
       script.src = "js/jquery.min.js";
       $('iframe#content').contents().find('head')[0].appendChild(script);
     </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter28400491 = new Ya.Metrika({id:28400491,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true});
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/28400491" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
   </body>
 </html>
